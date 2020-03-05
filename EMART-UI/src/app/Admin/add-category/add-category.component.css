@@ -1,0 +1,20 @@
+.form-group{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#b1{
+color: rgb(16, 230, 62);
+/* background-image: url("src\assets\images\negative-space-woman-model-bike-brick-wall-iilya-yakover-thumb-1.jpg"); */
+
+}
+input[type=text], 
+input[type=password] { 
+  text-align: center;
+  width: 20%; 
+
+  padding: 1px 5px; 
+  margin: 2px 0; 
+  display: flex; 
+  border: 1px solid rgb(119, 25, 25); 
+  box-sizing: border-box; 
+} 

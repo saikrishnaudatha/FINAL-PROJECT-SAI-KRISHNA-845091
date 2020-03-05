@@ -1,0 +1,97 @@
+<!-- <p>login works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" id="s1">
+    <input type="text" id="fullName" name="fullName" placeholder=" ">
+    <label for="fullName">Full Name</label>
+    <input type="email" id="email" name="email" placeholder=" ">
+    <label for="email">Email</label>
+    <input type="password" id="password" name="password" placeholder=" ">
+    <label for="password">Password</label>
+    <button type="button">Submit</button>
+  </form> -->
+  <!-- <div  class="jumbotron jumbotron-fluid " >
+    <h4>LOGIN</h4>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+           <label ><span class="glyphicon glyphicon-user">ID</span></label>
+  
+           
+          <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+          <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+              <div *ngIf="f.username.errors.required">username is required</div>
+          </div> 
+         
+      </div>
+      <div class="form-group">
+          <label><span class="glyphicon glyphicon-lock">Password</span></label>
+          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+      </div>
+      <div class="form-group">
+         Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+      seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;
+      </div>
+  
+  
+  <div class="text-center">
+ 
+      <button  type="submit" (click)="onSubmit()" id=b2>Login</button>
+      <button  type="reset" (click)="onReset()" id=b2>Reset</button>
+      
+  </div>
+  
+  
+  <div class="text-center"> 
+      <a [routerLink]="['/register-buyer']">Register Buyer/</a>
+         
+      <a [routerLink]="['/register-seller']">Register Seller</a>
+  </div>
+  </form>
+  </div> -->
+  <!-- <div class="jumborton"> -->
+    <body>
+    <div  class="container">
+        <form [formGroup]="loginForm" (ngSubmit)="Validate()" id="s1">
+            <div class="form-group" >
+                
+                
+                    <!-- <input type="text" id="fullName" name="fullName"> -->
+                    <label for="fullName" >UserName</label>
+                  
+                <input type="text" formControlName="username"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Name is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+            </div>
+        <div class="text-center">
+            <button class="btn btn-primary mr-1 " ><b>Login</b></button><br>
+            <button class="btn btn-secondary" type="reset" (click)="onReset()" >Reset</button><br>
+            Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;
+        </div>
+      
+    
+<!-- <div class="form-group">
+  Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;
+</div> -->
+        <div class="text-center"> 
+            <ul>
+             <a [routerLink]="['/register-buyer']"><h3>Register Buyer</h3></a>
+                
+             <a [routerLink]="['/register-seller']"><h3>Register Seller</h3></a>
+            </ul>
+       </div>
+
+      </form>
+    </div>
+  <!-- </div>  -->
+</body>

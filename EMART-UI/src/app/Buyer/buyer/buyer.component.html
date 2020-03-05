@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active"  href="#home" id="v1"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i>ViewProfile</a>
+        <a href="#"><i class="fa fa-fw fa-phone"></i>Contact</a>  -->
+        
+        <!-- <div class="search-container">
+          <form action="/action_page.php"> -->
+            <!-- <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button> -->
+          <!-- </form>
+        </div> 
+      </div>-->
+
+
+
+      <!-- <div class="sidenav"> -->
+          <!-- <h1>Buyer</h1><br><br>
+        <a href=# id="r1"><span class="glyphicon glyphicon-shopping-cart"></span> BuyProduct</a><br><br><br>
+        <a href=# id="r1"><span class="glyphicon glyphicon-time"> </span>  PurchaseHistory </a><br><br><br>
+        <a href=# id="r1"><span class="glyphicon glyphicon-eye-open"> </span>  ViewCart</a><br> -->
+   
+    <!-- </div> -->
+
+
+    
+<!-- </body>
+</html>
+
+<div class="offset-3">
+  <div class="login">
+      <h2 class="login-header">Log in</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+          <div  class="form-group" >
+              <label>Enter ID</label>
+              <input type="text" formControlName="id"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.id.errors }" />
+              <div  *ngIf="submitted && f.id.errors" class="invalid-feedback">
+                  <div *ngIf="f.id.errors.required">ID is required</div>
+              </div>
+          </div>
+          <div  class="form-group">
+              <label >Password</label>
+              <input type="password" formControlName="pwd" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.pwd.errors }" />
+              <div *ngIf="submitted && f.pwd.errors" class="invalid-feedback">
+                  <div *ngIf="f.pwd.errors.required">Password is required</div>
+              </div>
+          </div>
+      <div class="text-center" >
+          <button id="a" (click)="onSubmit()">Login</button>
+          
+          <button id="a" type="reset" (click)="onReset()" >Reset</button>
+            
+            
+          <div class="form-group row">
+            <label asp-for="PhotoPath" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <div class="custom-file">
+                    <input asp-for="PhotoPath" class="form-control custom-file-input">
+                    <label class="custom-file-label">Choose File...</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+
+
+
+          <button class="btn btn-primary" type="submit" (click)="onSubmit()" >Login</button>
+         &nbsp; &nbsp;
+  
+          <button class="btn btn-primary" type="reset" (click)="onReset()" >Reset</button>
+          <hr>
+  
+      </div>
+  
+  
+     
+  
+      
+      </form>
+  </div>
+      
+  
+      </div>-->
+
+
+<router-outlet></router-outlet> 

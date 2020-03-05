@@ -1,0 +1,55 @@
+<!-- <div  class="jumbotron jumbotron-fluid " > -->
+    <h4>Add Subcategories </h4>
+  <form [formGroup]="subcategoryForm" (ngSubmit)="onSubmit()">
+      
+    <div class="form-group">
+        <label>CategoryName</label>
+        <select formControlName="CategoryName" class="form-control" >
+            <option *ngFor="let cat of categorylist" [value]="cat.categoryId">{{cat.categoryName}}</option>
+        </select>
+             <div *ngIf="submitted && f.CategoryName.errors" class="invalid-feedback">
+             </div>
+      </div>
+
+    <div class="form-group ">
+        <label>SubcategoryName</label>
+        <input type="text" formControlName="SubcategoryName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.SubcategoryName.errors }" />
+        <div *ngIf="submitted && f.SubcategoryName.errors" class="invalid-feedback">
+            <div *ngIf="f.SubcategoryName.errors.required"> Name is required</div>
+            <div *ngIf="f.SubcategoryName.errors.pattern">Enter only Alphabets</div>
+        </div>
+    </div>
+  
+
+  <div class="form-group ">
+      <label>BriefDetails</label>
+      <input type="text" formControlName="BriefDetails" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.BriefDetails.errors }" />
+      <div *ngIf="submitted && f.BriefDetails.errors" class="invalid-feedback">
+          <div *ngIf="f.BriefDetails.errors.required">Brief Details is required</div>
+      </div>
+  </div>
+
+
+      <div class="form-group">
+          <label>GST</label>
+          <input type="text" formControlName="GST" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.GST.errors }" />
+          <div *ngIf="submitted && f.GST.errors" class="invalid-feedback">
+              <div *ngIf="f.GST.errors.required">GST is required</div>
+              <div *ngIf="f.GST.errors.minlength">GST must be at least 6 characters</div>
+          </div>
+      </div>
+
+      
+
+
+  <div class="text-center">
+
+      <button  type="submit" >Add</button>
+      <button  type="reset" (click)="onReset()" >Reset</button>
+      
+  </div>
+
+
+  
+  </form>
+<!-- </div> -->

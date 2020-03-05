@@ -1,0 +1,26 @@
+<html>
+
+<body id="b1">
+
+    <div class="row">
+        <nav class="navbar navbar-expand-lg ">
+       <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+          <a class="nav-link" [routerLink]="['/Admin']"><span class="glyphicon glyphicon-home"></span>Admin</a>
+          </li>
+           <li class="nav-item ">
+             <a class="nav-link" [routerLink]="'add-category'"><span class="glyphicon glyphicon-plus"></span> Add Category</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" [routerLink]="'add-sub-category'"><span class="glyphicon glyphicon-plus"></span>  Add SubCategory </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'view-categories'"><span class="glyphicon glyphicon-plus"></span>  View Category </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'view-sub-categories'"><span class="glyphicon glyphicon-plus"></span>  View SubCategory </a>
+          </li>
+         </ul></div></nav></div>
+        <router-outlet></router-outlet>
+        

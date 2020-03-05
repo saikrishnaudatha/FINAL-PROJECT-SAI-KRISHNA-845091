@@ -1,0 +1,261 @@
+form {
+  border-color:cornflowerblue;
+    /* background: #456; */
+    font-family: 'Open Sans', sans-serif;
+    align-self: baseline;
+}
+
+/* @import  url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); */
+.form-group {
+  padding-left: 12px;
+  padding-top: 12px;
+  align-content: center;
+}
+#f1{
+align-content: center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url("src\assets\images\negative-space-red-sneakers-canvas-shoes-mstudio-thumb-1.jpg"); */
+
+    height: 2000px;
+  width: 100%;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+background-position: center;
+/* position: fixed; */
+}
+
+
+
+
+
+  /* .register {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+  }
+
+  .register-header,
+  .loregistergin p {
+    margin-top: 1;
+    margin-bottom: 1;
+  } */
+
+/* .register-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(15, 66, 107);
+} */
+.jumbotron{
+ width : 400px;
+}
+h1{
+color: blue;
+font-style: italic;
+}
+/* .register-header {
+  background: cornflowerblue;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.register-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.register p {
+  padding: 12px;
+} */
+
+ input {
+  box-sizing: border-box;
+  display: block;
+  width: 900%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1.95em;
+  text-align: left;
+}
+
+/* .b1 input[type="text"],
+.b1 input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+  width:90%;
+ padding-right: 12%;
+ 
+ width: 50%; 
+ padding: 6px 10px; 
+ margin: 4px 0; 
+ display: inline-block; 
+ border: 1px solid #ccc; 
+ box-sizing: border-box; 
+}  */
+
+
+label {
+color:black;
+/* transform: translate(0.3rem, -1.5rem); */
+/* transition: all 0.2s ease-out; */
+}
+  input[type=text], 
+input[type=password] { 
+  text-align: center;
+  width: 50%; 
+
+  padding: 1px 5px; 
+  margin: 2px 0; 
+  display: grid; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+} 
+
+
+
+
+
+
+
+
+/* .jumbotron{
+ 
+  width:400px;
+} */
+
+/* .login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+  width:"20%";
+} */
+
+/* #a {
+  background:orange;
+  border-color: transparent;
+  /* color: #fff; */
+  /* cursor: pointer; */
+/* } */ 
+
+
+
+
+
+#b1
+{
+background-image: url("src\assets\images\negative-space-red-sneakers-canvas-shoes-mstudio-thumb-1.jpg");
+
+}
+* {box-sizing: border-box;}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-image: url("src\assets\images\shoes.jpg"); */
+}
+
+/* .topnav {
+overflow: hidden;
+background-color: #e9e9e9;
+padding: 12px 16px;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: #2196F3;
+color: white;
+}
+
+.topnav .search-container {
+float: right;
+}
+
+.topnav input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+.topnav .search-container button {
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+  float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
+}
+.topnav input[type=text] {
+  border: 1px solid #ccc;  
+}
+}
+#l
+{
+  float: right;
+}
+
+
+
+
+.round-shape {
+  border-radius: 50%;
+  width: 40%;
+  height: 90%
+}
+
+h5{
+color: blue;
+}
+
+#c1
+{
+border-radius: 30px 30px 30px 30px;
+} */
+

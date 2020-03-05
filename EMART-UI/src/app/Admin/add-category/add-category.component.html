@@ -1,0 +1,48 @@
+<!-- <html>
+
+<body id="b1"> -->
+
+
+
+<p>add-category works!</p>
+<!-- <div  class="jumbotron jumbotron-fluid " > -->
+    <h4>Registration Form </h4>
+  <form [formGroup]="addcatgForm" (ngSubmit)="onSubmit()">
+      
+    <!-- <div class="form-group ">
+        <label>ID</label>
+        <input type="text" formControlName="CategoryId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.CategoryId.errors }" />
+        <div *ngIf="submitted && f.CategoryId.errors" class="invalid-feedback">
+            <div *ngIf="f.CategoryId.errors.required">ID is required</div>
+        </div>
+    </div> -->
+
+    <div class="form-group ">
+        <label>CategoryName</label>
+        <input type="text" formControlName="CategoryName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.CategoryName.errors }" />
+        <div *ngIf="submitted && f.CategoryName.errors" class="invalid-feedback">
+            <div *ngIf="f.CategoryName.errors.required"> Name is required</div>
+            <div *ngIf="f.CategoryName.errors.pattern">Enter only Alphabets</div>
+        </div>
+    </div>
+  
+    <div class="form-group">
+        <label>Brief</label>
+        <input type="text" formControlName="BriefDetails" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.BriefDetails.errors }" />
+        <div *ngIf="submitted && f.BriefDetails.errors" class="invalid-feedback">
+            <div *ngIf="f.BriefDetails.errors.required">breif is required</div>
+        </div>
+    </div>
+  
+
+  <div class="text">
+
+      <button  type="submit" >Register</button>
+      <button  type="reset" (click)="onReset()" >Reset</button>
+      
+  </div>
+
+
+  
+  </form>
+<!-- </div> -->

@@ -1,0 +1,71 @@
+<html>
+
+<body id="b1">
+
+
+
+<!-- <div  class="jumbotron jumbotron-fluid " > -->
+    <h4>Registration Form </h4>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      
+    <!-- <div class="form-group ">
+        <label>ID</label>
+        <input type="text" formControlName="BuyerId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.BuyerId.errors }" />
+        <div *ngIf="submitted && f.BuyerId.errors" class="invalid-feedback">
+            <div *ngIf="f.BuyerId.errors.required">ID is required</div>
+        </div>
+    </div> -->
+
+    <div class="form-group ">
+        <label>UserName</label>
+        <input type="text" formControlName="UserName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.UserName.errors }" />
+        <div *ngIf="submitted && f.UserName.errors" class="invalid-feedback">
+            <div *ngIf="f.UserName.errors.required"> Name is required</div>
+            <div *ngIf="f.UserName.errors.pattern">Enter only Alphabets</div>
+        </div>
+    </div>
+  
+  
+  <div class="form-group ">
+      <label>MobileNo</label>
+      <input type="text" formControlName="MobileNo" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.MobileNo.errors }" />
+      <div *ngIf="submitted && f.MobileNo.errors" class="invalid-feedback">
+          <div *ngIf="f.MobileNo.errors.required">Mobile no is required</div>
+          <div *ngIf="f.MobileNo.errors.pattern">Mobile no Must be Valid</div>
+      </div>
+  </div>
+
+
+  <div class="form-group ">
+      <label>EmailId</label>
+      <input type="text" formControlName="EmailId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EmailId.errors }" />
+      <div *ngIf="submitted && f.EmailId.errors" class="invalid-feedback">
+          <div *ngIf="f.EmailId.errors.required">Email is required</div>
+          <div *ngIf="f.EmailId.errors.email">Email must be a valid email address</div>
+      </div>
+  </div>
+
+
+      <div class="form-group">
+          <label>Password</label>
+          <input type="Password" formControlName="Password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Password.errors }" />
+          <div *ngIf="submitted && f.Password.errors" class="invalid-feedback">
+              <div *ngIf="f.Password.errors.required">Password is required</div>
+              <div *ngIf="f.Password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
+      </div>
+
+      
+
+
+  <div class="text">
+
+      <button  type="submit" >Register</button>
+      <button  type="reset" (click)="onReset()" >Reset</button>
+      
+  </div>
+
+
+  
+  </form>
+</body>
