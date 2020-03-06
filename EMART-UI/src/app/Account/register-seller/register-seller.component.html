@@ -19,13 +19,8 @@
                        
                            
                         <div class="form-group ">
-                            <div class="form-group ">
-                                <label>ID</label>
-                                <input type="text" formControlName="SellerId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.SellerId.errors }" />
-                                <div *ngIf="submitted && f.SellerId.errors" class="invalid-feedback">
-                                    <div *ngIf="f.SellerId.errors.required">ID is required</div>
-                                </div>
-                            </div>
+                            
+                            
                             <label>UserName</label>
                             <input type="text" formControlName="UserName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.UserName.errors }" />
                             <div *ngIf="submitted && f.UserName.errors" class="invalid-feedback">

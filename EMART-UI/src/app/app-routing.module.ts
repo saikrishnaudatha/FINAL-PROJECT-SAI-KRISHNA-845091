@@ -27,7 +27,8 @@ import { ViewSubCategoriesComponent } from './Admin/view-sub-categories/view-sub
 
 const routes: Routes = [
   {path:'buyer',component:BuyerComponent,children:
-  [{path:'search',component:SearchComponent},
+  [
+    {path:'search',component:SearchComponent},
  { path:'view-cart',component:ViewCartComponent},
  { path:'purchase-history',component:PurchaseHistoryComponent},
  { path:'buy-product',component:BuyProductComponent},

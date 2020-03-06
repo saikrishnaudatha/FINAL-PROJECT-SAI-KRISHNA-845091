@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
-<body>
-
+<div class="img">
     <div class="topnav">
         <a class="active"  href="/home"><i class="fa fa-fw fa-home"></i>Home</a>
         <a [routerLink]="['add-items']"  ><span class="glyphicon glyphicon-folder-open"></span> Add Items</a>
-        <a href=#><span class="glyphicon glyphicon-search"> </span> View Items </a>
+        <a [routerLink]="['view-items']" ><span class="glyphicon glyphicon-search"> </span> View Items </a>
         <a href=#><span class="glyphicon glyphicon-file"> </span>  View Report</a>
-        <!-- <a href=#><span class="glyphicon glyphicon-file"> </span>  View Profile</a> -->
-      
+        <a [routerLink]="['view-profile']" routerLinkActive="router-link-active" ><span class="glyphicon glyphicon-file"> </span>  View Profile</a>
+        <a [routerLink]="['/home/login']" routerLinkActive="router-link-active">Logout</a> 
         
         <!-- <div class="search-container">
           <form action="/action_page.php"> -->
@@ -39,6 +29,9 @@
 
 
 
-        </div></body></html>
+        </div>
+     
+        <router-outlet></router-outlet>
+      </div>
+    <!-- </body></html> -->
 
-<router-outlet></router-outlet>

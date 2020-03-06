@@ -36,13 +36,11 @@
   }
 * {box-sizing: border-box;}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.img {
   background-image: url("src\assets\images\shoeback1.jpg");
-  height: 650px;
+  height: 1200px;
   /* width: 1035px;  */
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
    background-attachment: fixed; 
 background-position: center;
@@ -108,7 +106,7 @@ background-position: center;
     float: none;
   }
   .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
     width: 100%;

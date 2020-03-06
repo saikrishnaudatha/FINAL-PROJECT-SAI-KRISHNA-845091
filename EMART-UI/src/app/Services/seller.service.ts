@@ -4,14 +4,22 @@ import{Observable} from "Rxjs";
 import { Items } from '../Model/items';
 import { Category } from '../Model/category';
 import { SubCategory } from '../Model/sub-category';
+import { Seller } from '../Model/seller';
+import { identifierModuleUrl } from '@angular/compiler';
 
 
 
-const Requestheaders={headers:new HttpHeaders({'content-Type':'application/json',})}
+const Requestheaders={headers:new HttpHeaders({'content-Type':'application/json',
+'Authorization':'Bearer'+localStorage.getItem('token')
+})}
+
 @Injectable({
   providedIn: 'root'
 })
 export class SellerService {
+  GetProfile(id1: string) {
+    throw new Error("Method not implemented.");
+  }
 
   url:string='http://localhost:51766/Item/'
   constructor(private http:HttpClient) { }
@@ -20,7 +28,10 @@ export class SellerService {
   {
     return this.http.post<any>(this.url+'AddItem',JSON.stringify(item),Requestheaders);
   }
-
+  public ViewProfile(id:string):Observable<Seller[]>
+  {
+    return this.http.get<Seller[]>(this.url+'ViewProfile/'+id,Requestheaders);
+  }
 
 public ViewItems():Observable<Items[]>
   {
@@ -49,7 +60,10 @@ public GetItem(id:string) : Observable<Items>
 {
   return this.http.get<Items>(this.url+'GetItem/'+id,Requestheaders)
 }
-
+public EditProfile()
+{
+  return this.http.put<Items>(this.url+'EditProfile',Requestheaders)
+}
 
 
 }

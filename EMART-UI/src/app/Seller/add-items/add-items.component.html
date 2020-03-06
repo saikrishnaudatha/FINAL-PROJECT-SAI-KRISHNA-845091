@@ -1,18 +1,20 @@
-<p>add-items works!</p>
-<div class="container-fluid">
+
+<!-- <div class="container-fluid">
 
     <div class="row">
        <div class="col-lg-7">
 
 
-    </div>
+    </div> -->
 
 
-    <div class="col-lg-5">
-<div  class="jumbotron jumbotron-fluid " >
+    <!-- <div class="col-lg-5"> -->
+<!-- <div  class="jumbotron jumbotron-fluid " > -->
     <h4>Add Categories </h4>
+    <div class="view">
     <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
-      
+      <div class="row">
+          <div class="col-6">
         <div class="form-group ">
             <label>SellerId</label><br>
             <input type="text" formControlName="SellerId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.SellerId.errors }" />
@@ -21,7 +23,8 @@
                 <div *ngIf="f.SellerId.errors.pattern">Enter only Alphabets</div>
             </div>
         </div>
-
+    </div>
+        <div class="col-6">
         <div class="form-group">
             <label>CategoryName</label>
             <select formControlName="CategoryName" class="form-control" (change)="GetSub()">
@@ -29,6 +32,9 @@
             </select>
                  
           </div>
+        </div>
+    
+      </div>
 
 
 
@@ -119,5 +125,7 @@
   
   </form>
 </div>
-</div>
-</div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->

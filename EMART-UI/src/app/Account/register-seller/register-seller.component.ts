@@ -71,16 +71,16 @@ sellerlist:Seller[];
     Register()
   {
     this.seller=new Seller();
-    this.seller.SellerId=this.registerForm.value["SellerId"];
-    this.seller.UserName=this.registerForm.value["UserName"];
-    this.seller.MobileNo=(this.registerForm.value["MobileNo"]);
-    this.seller.CompanyName=this.registerForm.value["CompanyName"];
-    this.seller.GSTIN=this.registerForm.value["GSTIN"];
-    this.seller.Password=this.registerForm.value["Password"];
-    this.seller.PostalAddress=this.registerForm.value["PostalAddress"];
-    this.seller.Website=this.registerForm.value["Website"];
-    this.seller.EmailId=this.registerForm.value["EmailId"];
-    this.seller.BriefDetails=this.registerForm.value["BriefDetails"];
+    this.seller.sellerId='S'+Math.floor(Math.random()*999);
+    this.seller.userName=this.registerForm.value["UserName"];
+    this.seller.mobileno=(this.registerForm.value["MobileNo"]);
+    this.seller.companyName=this.registerForm.value["CompanyName"];
+    this.seller.gstin=this.registerForm.value["GSTIN"];
+    this.seller.password=this.registerForm.value["Password"];
+    this.seller.postalAddress=this.registerForm.value["PostalAddress"];
+    this.seller.website=this.registerForm.value["Website"];
+    this.seller.emailId=this.registerForm.value["EmailId"];
+    this.seller.briefDetails=this.registerForm.value["BriefDetails"];
     this.service.SellerRegister(this.seller).subscribe
     (
       res=>

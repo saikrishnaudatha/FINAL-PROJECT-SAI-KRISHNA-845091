@@ -1,1 +1,29 @@
 <p>buy-product works!</p>
+<div  class="jumbotron  " >
+    <h3>Buy Product</h3>
+  <form [formGroup]="transForm">
+      <div class="form-group">
+           
+  
+           
+          <input type="text" formControlName="numberofitems" class="form-control" required/>
+          </div> 
+         
+     
+      
+      <div class="form-group">
+       
+        Debit  <input type="radio" formControlName="transactiontype"  value="debit"  />&nbsp;
+        Credit  <input type="radio" formControlName="transactiontype"  value="credit" />
+  
+      </div>
+  <div class="text-center">
+  
+      <button  type="submit" id=b2  (click)="onSubmit()">Buy</button>
+      
+      
+  </div>
+  
+  </form>
+  </div>
+  
