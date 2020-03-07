@@ -7,6 +7,7 @@ namespace Emart.AdminService.Models
     {
         public SubCategory()
         {
+            Cart = new HashSet<Cart>();
             Items = new HashSet<Items>();
         }
 
@@ -17,6 +18,7 @@ namespace Emart.AdminService.Models
         public string Gst { get; set; }
 
         public virtual Category Category { get; set; }
+        public virtual ICollection<Cart> Cart { get; set; }
         public virtual ICollection<Items> Items { get; set; }
     }
 }

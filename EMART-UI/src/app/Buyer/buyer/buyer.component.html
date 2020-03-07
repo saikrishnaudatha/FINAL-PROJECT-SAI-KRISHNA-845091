@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,10 +10,13 @@
 <body>
 
     <div class="topnav">
-        <a class="active"  href="#home" id="v1"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i>ViewProfile</a>
-        <a href="#"><i class="fa fa-fw fa-phone"></i>Contact</a>  -->
-        
+        <a [routerLink]="['/home/login']" ><span class="glyphicon glyphicon-log-out" > </span> LogOut </a>
+        <a class="active" [routerLink]="['/home']" routerLinkActive="router-link-active"  id="v1"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a [routerLink]="['view-buyer-profile']" routerLinkActive="router-link-active" ><i class="fa fa-fw fa-user"></i>ViewProfile</a>
+        <a href="#"><i class="fa fa-fw fa-phone"></i>Contact</a> 
+        <a [routerLink]="['search']" ><span class="glyphicon glyphicon-expand" > </span> Search </a><br><br>
+        <!-- <a [routerLink]="['/home/login']" ><span class="glyphicon glyphicon-log-out" > </span> Logout </a><br><br> -->
+        <a (click)="Logout()">Logout</a> 
          <!-- <div class="search-container">
         
             <input type="text" placeholder="Search.." name="search">
@@ -95,4 +98,4 @@
       </div> -->
 
 
-<router-outlet></router-outlet>  -->
+<router-outlet></router-outlet>  

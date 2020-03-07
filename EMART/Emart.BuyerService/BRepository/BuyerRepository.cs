@@ -21,7 +21,25 @@ namespace Emart.BuyerService.BRepository
                 _context.SaveChanges();
             }
 
-            public void EditProfile(Buyer obj)
+        public void Addtocart(Cart cartobj)
+        {
+            _context.Cart.Add(cartobj);
+            _context.SaveChanges();
+        }
+
+        public void Deletefromcart(string cartid)
+        {
+            Cart cartobj = _context.Cart.Find(cartid);
+            _context.Remove(cartobj);
+            _context.SaveChanges();
+        }
+
+        public List<Cart> ViewCart()
+        {
+            return _context.Cart.ToList();
+        }
+    
+    public void EditProfile(Buyer obj)
             {
                 _context.Buyer.Update(obj);
                 _context.SaveChanges();

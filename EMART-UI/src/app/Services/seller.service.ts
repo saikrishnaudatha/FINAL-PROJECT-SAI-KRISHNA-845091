@@ -21,16 +21,17 @@ export class SellerService {
     throw new Error("Method not implemented.");
   }
 
-  url:string='http://localhost:51766/Item/'
+  url:string='http://localhost:51766/item/'
+  url1:string='http://localhost:51766/seller/'
   constructor(private http:HttpClient) { }
 
   public AddItem(item:Items):Observable<any>
   {
     return this.http.post<any>(this.url+'AddItem',JSON.stringify(item),Requestheaders);
   }
-  public ViewProfile(id:string):Observable<Seller[]>
+  public ViewProfile(id:string):Observable<Seller>
   {
-    return this.http.get<Seller[]>(this.url+'ViewProfile/'+id,Requestheaders);
+    return this.http.get<Seller>(this.url1+'ViewProfile/'+id,Requestheaders);
   }
 
 public ViewItems():Observable<Items[]>

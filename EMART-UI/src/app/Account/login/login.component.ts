@@ -56,6 +56,7 @@ public Validate()
       console.log(res);
       this.token=res;
 console.log(this.token);
+localStorage.setItem('token',this.token.token);
 localStorage.setItem('buyerId',this.token.buyerId);
       if(this.token.msg=='success'){
           this.route.navigateByUrl('/buyer');
@@ -71,6 +72,7 @@ if(role=='seller')
 this.service.SellerLogin(username,password).subscribe(res=>{
   console.log(res)
   this.token=res;
+  localStorage.setItem('token',this.token.token);
   localStorage.setItem('sellerid',this.token.sellerId);
   if(this.token.msg=="success"){
     this.route.navigateByUrl("/seller")
@@ -83,6 +85,7 @@ this.service.SellerLogin(username,password).subscribe(res=>{
 }
 if(username=="Admin" && password=="admin")
 {
+  localStorage.setItem('token',this.token.token);
   this.route.navigateByUrl("/admin");
 }
 }

@@ -7,6 +7,7 @@ namespace Emart.AccountService.Models
     {
         public Category()
         {
+            Cart = new HashSet<Cart>();
             Items = new HashSet<Items>();
             SubCategory = new HashSet<SubCategory>();
         }
@@ -15,6 +16,7 @@ namespace Emart.AccountService.Models
         public string CategoryName { get; set; }
         public string BriefDetails { get; set; }
 
+        public virtual ICollection<Cart> Cart { get; set; }
         public virtual ICollection<Items> Items { get; set; }
         public virtual ICollection<SubCategory> SubCategory { get; set; }
     }

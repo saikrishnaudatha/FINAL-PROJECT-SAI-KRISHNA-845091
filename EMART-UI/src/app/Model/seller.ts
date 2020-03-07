@@ -8,6 +8,6 @@ export class Seller {
     postalAddress:string;
     website:string;
     emailId:string;
-    mobileno:string;
-  createdDateTime: Date;
+    mobileNo:string;
+  // createdDateTime: Date;
 }

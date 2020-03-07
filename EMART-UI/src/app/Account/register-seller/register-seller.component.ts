@@ -73,7 +73,7 @@ sellerlist:Seller[];
     this.seller=new Seller();
     this.seller.sellerId='S'+Math.floor(Math.random()*999);
     this.seller.userName=this.registerForm.value["UserName"];
-    this.seller.mobileno=(this.registerForm.value["MobileNo"]);
+    this.seller.mobileNo=(this.registerForm.value["MobileNo"]);
     this.seller.companyName=this.registerForm.value["CompanyName"];
     this.seller.gstin=this.registerForm.value["GSTIN"];
     this.seller.password=this.registerForm.value["Password"];

@@ -1,7 +1,7 @@
 export class TransactionHistory {
     id:string;
     buyerid:string;
-    selletid:string;
+    sellerid:string;
     Transactionid:string;
     itemid:string;
     numberofitems:number;

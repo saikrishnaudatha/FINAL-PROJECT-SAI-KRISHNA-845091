@@ -1,9 +1,9 @@
 export class Items {
     sellerId:string;
     itemId:string;
-categoryId:number;
-subcategoryId:number;
-price:number;
+categoryId:string;
+subcategoryId:string;
+price:string;
 itemName:string;
 description:string;
 stockNumber:number;

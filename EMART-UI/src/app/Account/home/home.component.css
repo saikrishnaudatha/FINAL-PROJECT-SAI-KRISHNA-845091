@@ -19,6 +19,8 @@ label {
   color: #999;
   transform: translate(0.25rem, -1.5rem);
   transition: all 0.2s ease-out;
+  text-align: center;
+  float: right;
 }
 /* .topnav {
   overflow: hidden;
