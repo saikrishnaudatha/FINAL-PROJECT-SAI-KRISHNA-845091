@@ -1,6 +1,6 @@
 <p>buy-product </p>
 <!-- <div  class="jumbotron  " > -->
-    <h3>Buy Product</h3>
+    <!-- <h3>Buy Product</h3>
   <form [formGroup]="transForm">
       <div class="form-group">
            
@@ -24,6 +24,56 @@
       
   </div>
   
-  </form>
+  </form> -->
   <!-- </div> -->
-  
+  <div class="card card-signin my-5 " style="float:right">
+    <h5 class="card-header text-center" >Payment </h5>
+                        <div class="card-body">
+                            <form [formGroup]="buyerform" (ngSubmit)="onSubmit()">    
+                                  <div class="form-group">
+                                    <label >Number Of Items</label>
+                                    <input type="text" formControlName="numberOfItems" class="form-control" autofocus/>
+                                  </div>
+                                  <div class="form-group">
+                                    <label >Date</label>
+                                    <input type="date" formControlName="dateTime" class="form-control"/>
+                                  </div>
+                                <div class="form-group">
+                                    <label> PayMent Mode</label>
+                                    <select formControlName="transactionType">
+                                        <option value="-1">Choose..</option>
+                                        <option value="credit">Credit Card</option>
+                                        <option value="debit">Debit Card</option>
+                                        <option value="cod">Cash On Delivery</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label >Card Holders Name</label>
+                                    <input type="text" formControlName="name" class="form-control"/>
+                                  </div>
+                                  <div class="form-group">
+                                    <label >Card Number</label>
+                                    <input type="text" formControlName="cardNumber" class="form-control"/>
+                                  </div>
+                                  <div class="form-group">
+                                    <label >CVV</label>
+                                    <input type="number" formControlName="cvv" class="form-control" style="width: 30%;"/>
+                                  </div>
+                                  <div class="form-group">
+                                    <label >ExpiryDate</label>
+                                    <input type="date" formControlName="edate" class="form-control"/>
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                    <label >Remarks</label>
+                                    <input type="text" formControlName="remarks" class="form-control"/>
+                                  </div>
+                                <hr class="my-4 bg-success"/>
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn  mr-1">Purchase</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
