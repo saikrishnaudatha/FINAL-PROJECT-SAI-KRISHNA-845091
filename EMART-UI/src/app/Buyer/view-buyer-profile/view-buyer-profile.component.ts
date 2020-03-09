@@ -84,11 +84,10 @@ EditProfile()
 // this.item.createdDateTime=this.viewprofileForm.value["createdDateTime"];
 
   console.log(this.item);
-//   this.service.EditProfile(this.item).subscribe(res=>
-//     {
-//       console.log('Record Updated');
-//     })
-// }
-
+  this.service.EditProfile(this.item).subscribe(res=>
+    {
+      console.log('Record Updated');
+    })
 }
+
 }
