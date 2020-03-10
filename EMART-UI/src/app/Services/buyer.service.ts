@@ -44,5 +44,9 @@ export class BuyerService {
   {
     return this.http.delete<Cart>(this.url+'Deletefromcart/'+cartid,Requestheaders);
    }
+   public EditProfile(buyer:Buyer):Observable<any>
+   {
+     return this.http.put<Buyer>(this.url+'EditProfile',JSON.stringify(buyer),Requestheaders);
+   }
 
 }

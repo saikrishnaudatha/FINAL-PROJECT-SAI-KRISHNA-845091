@@ -59,11 +59,11 @@ public UpdateItem(item:Items):Observable<any>
 }
 public GetItem(id:string) : Observable<Items>
 {
-  return this.http.get<Items>(this.url+'GetItem/'+id,Requestheaders)
+  return this.http.get<Items>(this.url+'GetItem/'+id,Requestheaders);
 }
-public EditProfile()
+public EditProfile(seller:Seller):Observable<any>
 {
-  return this.http.put<Items>(this.url+'EditProfile',Requestheaders)
+  return this.http.put<Seller>(this.url1+'EditProfile',JSON.stringify(seller),Requestheaders);
 }
 
 

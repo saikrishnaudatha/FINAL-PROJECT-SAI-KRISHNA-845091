@@ -25,7 +25,7 @@ namespace Emart.Test
         public void TestSearchItem()
         {
 
-            var result = _buyrepo.SearchItems("samsung");
+            var result = _buyrepo.SearchItems("FILA");
 
             Assert.IsNotNull(result);
 
@@ -33,28 +33,28 @@ namespace Emart.Test
 
 
 
-        //[Test]
-        //[Description("TestBuyItem()")]
+        [Test]
+        [Description("TestBuyItem()")]
 
-        //public void TestBuyItem()
-        //{
-        //    _buyrepo.BuyItem(new TransactionHistory()
-        //    {
-        //        Id = "9",
-        //        BuyerId = "1",
-        //        SellerId = "1",
-        //        TransactionId = "1",
-        //        ItemId = "I660",
-        //        NumberOfItems = "2",
-        //        DateTime = DateTime.Now,
-        //        Remarks = "Good",
-        //        TransactionType = "Credit Card"
-        //    }
-        // );
-        //    var result = _buyrepo.TransactionHistory("1");
+        public void TestBuyItem()
+        {
+            _buyrepo.BuyItem(new TransactionHistory()
+            {
+                Id = "",
+                BuyerId = "1",
+                SellerId = "1",
+                TransactionId = "1",
+                ItemId = "I660",
+                NumberOfItems = "2",
+                DateTime = DateTime.Now,
+                Remarks = "Good",
+                TransactionType = "Credit Card"
+            }
+         );
+            var result = _buyrepo.TransactionHistory("1");
 
-        //    Assert.IsNotNull(result);
-        //}
+            Assert.IsNotNull(result);
+        }
 
         //[Test]
         //[Description("TestEditProfile")]

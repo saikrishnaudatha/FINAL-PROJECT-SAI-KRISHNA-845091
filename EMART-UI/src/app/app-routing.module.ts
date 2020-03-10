@@ -64,7 +64,7 @@ const routes: Routes = [
 {path:'register-buyer',component:RegisterBuyerComponent},
 {path:'register-seller',component:RegisterSellerComponent},
 
-//{path:'',redirectTo:'home',pathMatch:"full"}
+{path:'',component:HomeComponent}
 ];
 
 @NgModule({

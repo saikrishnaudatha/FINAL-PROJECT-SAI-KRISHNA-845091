@@ -15,6 +15,7 @@ export class ViewSellerProfileComponent implements OnInit {
   submitted=false;
 item:Seller;
 itemlist:Seller[];
+  seller: Seller;
   constructor(private formbuilder:FormBuilder,private service:SellerService) { 
     
   let id1=localStorage.getItem('sellerid');
@@ -70,26 +71,23 @@ this.viewprofileForm.reset();
 }
 EditProfile()
 {
-  this.item=new Seller();
-  console.log(this.item);
-  this.item.sellerId=this.viewprofileForm.value["buyerId"];
-  this.item.userName=this.viewprofileForm.value["userName"];
-  this.item.password=this.viewprofileForm.value["password"];
-  this.item.emailId=this.viewprofileForm.value["emailId"];
-  this.item.mobileNo=this.viewprofileForm.value["mobileno"];
-  this.item.companyName=this.viewprofileForm.value["companyName"];
-  this.item.gstin=this.viewprofileForm.value["gstin"];
-  this.item.briefDetails=this.viewprofileForm.value["briefDetails"];
-  this.item.postalAddress=this.viewprofileForm.value["postalAddress"];
-  this.item.website=this.viewprofileForm.value["website"];
-// this.item.createdDateTime=this.viewprofileForm.value["createdDateTime"];
-
-  console.log(this.item);
-//   this.service.EditProfile(this.item).subscribe(res=>
-//     {
-//       console.log('Record Updated');
-//     })
-// }
-
+  this.seller=new Seller();
+  console.log(this.seller);
+  this.seller.sellerId=localStorage.getItem('sellerid');
+  this.seller.userName=this.viewprofileForm.value["userName"];
+  this.seller.password=this.viewprofileForm.value["password"];
+  this.seller.emailId=this.viewprofileForm.value["emailId"];
+  this.seller.mobileNo=this.viewprofileForm.value["mobileNo"];
+  this.seller.companyName=this.viewprofileForm.value["companyName"];
+  this.seller.gstin=this.viewprofileForm.value["gstin"];
+  this.seller.briefDetails=this.viewprofileForm.value["briefDetails"];
+  this.seller.postalAddress=this.viewprofileForm.value["postalAddress"];
+  this.seller.website=this.viewprofileForm.value["website"];
+  console.log(this.seller);
+  this.service.EditProfile(this.seller).subscribe(res=>
+    {
+      console.log('Record Updated');
+    })
 }
+
 }

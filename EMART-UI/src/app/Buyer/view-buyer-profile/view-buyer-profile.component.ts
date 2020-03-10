@@ -14,13 +14,14 @@ export class ViewBuyerProfileComponent implements OnInit {
   submitted=false;
 item:Buyer;
 itemlist:Buyer[];
+buyer:Buyer;
   constructor(private formbuilder:FormBuilder,private service:BuyerService) { 
     
-  let id1=localStorage.getItem('sellerid');
+  let id1=localStorage.getItem('buyerId');
   console.log(id1);
   this.service.ViewProfile(id1).subscribe(res=>{
     this.item=res;
-    console.log(this.item);
+    //console.log(this.item);
     this.viewprofileForm.patchValue({
       buyerId:this.item.buyerId,
       userName:this.item.userName,
@@ -83,8 +84,8 @@ EditProfile()
   // this.item.website=this.viewprofileForm.value["website"];
 // this.item.createdDateTime=this.viewprofileForm.value["createdDateTime"];
 
-  console.log(this.item);
-  this.service.EditProfile(this.item).subscribe(res=>
+  console.log(this.buyer);
+  this.service.EditProfile(this.buyer).subscribe(res=>
     {
       console.log('Record Updated');
     })
