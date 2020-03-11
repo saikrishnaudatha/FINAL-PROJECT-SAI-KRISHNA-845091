@@ -1,0 +1,60 @@
+
+.view {
+    /* width: 200px; */
+    margin-left: 500px;
+  
+   background-color: black;
+   /* background: transparent(0.5); */
+   width: 500px;
+   position:absolute; 
+   margin-top:290px;
+   margin-left: 500px;
+  transform:translate(-50%,-50%);
+  /* width:250px; */
+  height:660px;
+  padding:80px 90px;
+  box-sizing:border-box;
+  border-radius: 30px;
+  background:rgba(0,0,0,0.5);
+ /* position: fixed; */
+ }
+    
+ /* .loginbox {
+   position:absolute; 
+   margin-top:270px;
+   margin-left: 500px;
+  transform:translate(-50%,-50%);
+  width:250px;
+  height:300px;
+  padding:50px 40px;
+  box-sizing:border-box;
+  border-radius: 30px;
+  background:rgba(0,0,0,0.5);
+ position: fixed;
+ } */
+ /* .loginbox label {
+    color: white;
+    font-size:12px;
+ }
+ .loginbox input[type="text"],
+ .loginbox input[type="password"]
+ {
+ border:none;
+  border-bottom:0.5px solid #fff;
+  border-bottom-right-radius: 20px;
+ background:transparent;
+ outline:none;
+ height:30px;
+ color:#fff;
+ font-size:20px;
+ }	
+ .loginbox button {
+  margin-top: 20px;
+ }
+ p{
+  color: red;
+  margin-top: 140px;
+  margin-left: 420px;
+ }
+  */
+ 

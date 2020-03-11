@@ -30,10 +30,10 @@ export class BuyerService {
   {
     return this.http.get<Buyer>(this.url+'ViewProfile/'+id,Requestheaders);
   }
-  public ViewCart() :Observable<Cart>
-  {
-    return this.http.get<Cart>(this.url+'ViewCart',Requestheaders);
-   }
+  // public ViewCart() :Observable<Cart>
+  // {
+  //   return this.http.get<Cart>(this.url+'ViewCart',Requestheaders);
+  //  }
 
    public Addtocart(cartobj:Cart) :Observable<Cart>
   {
@@ -48,5 +48,12 @@ export class BuyerService {
    {
      return this.http.put<Buyer>(this.url+'EditProfile',JSON.stringify(buyer),Requestheaders);
    }
-
+   public ViewCart(buyerid:string) :Observable<Cart>
+   {
+     return this.http.get<Cart>(this.url+'ViewCart/'+buyerid,Requestheaders);
+    }
+    public PurchaseHistory(buyerid:string) :Observable<TransactionHistory>
+    {
+      return this.http.get<TransactionHistory>(this.url+'TransactionHistory/'+buyerid,Requestheaders);
+     }
 }
