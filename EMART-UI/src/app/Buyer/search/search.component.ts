@@ -46,11 +46,13 @@ this.route.navigateByUrl('/buyer/buy-product')
 
 Add(item:Items)
 {
-//let bid=localStorage.getItem('buyerId')
+let bid=localStorage.getItem('buyerId')
+console.log(bid);
 this.cartobj=new Cart();
 this.cartobj.cartId='CT'+Math.round(Math.random()*999);
 this.cartobj.sellerId=item.sellerId;
 //this.cartobj.buyerId=
+this.cartobj.buyerId=bid;
 this.cartobj.categoryId=item.categoryId;
 this.cartobj.subcategoryId=item.subcategoryId;
 this.cartobj.image=item.image;

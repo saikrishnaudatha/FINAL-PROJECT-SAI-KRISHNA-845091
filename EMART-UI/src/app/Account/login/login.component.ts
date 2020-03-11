@@ -56,6 +56,7 @@ public Validate()
       console.log(res);
       this.token=res;
 console.log(this.token);
+      console.log(this.token.buyerId);
 localStorage.setItem('token',this.token.token);
 localStorage.setItem('buyerId',this.token.buyerId);
       if(this.token.msg=='success'){

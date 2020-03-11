@@ -35,14 +35,16 @@
 <!-- <marquee width="5%" direction="up" height="8%">
     <h1>shop Now</h1>
 </marquee> -->
-<div><marquee><h1><b>Shop Mart</b></h1></marquee></div>
-
+<!-- <div><marquee><h1><b>...Shoe Mart...</b></h1></marquee></div> -->
+<!-- <marquee behavior="scroll" direction="right" scrollamount="12">Little Fast Scrolling</marquee> -->
+<marquee behavior="scroll" direction="right" scrollamount="20"><h1><b>...Shoe Mart...</b></h1></marquee>
+<!-- <marquee behavior="scroll" direction="right" scrollamount="50"><h1><b>Shop Now</b></h1></marquee> -->
 
 <div class="row" >
     <div class="col-lg-12" id="c1">
 <!-- <div class="sidenav"> -->
     <a [routerLink]="['/home/login']"   id="r1"><i class="fa fa-fw fa-user"></i>Login</a><br><br>
-        <a href="#" id="r1"><i class="fa fa-fw fa-user" ></i>SignUp</a><br><br>
+        <!-- <a href="#" id="r1"><i class="fa fa-fw fa-user" ></i>SignUp</a><br><br> -->
         <!-- <a href="src\app\Admin\admin\admin.component.html" id="r1"><span class="glyphicon glyphicon-expand" > </span>  ADMIN</a><br><br> -->
     <a [routerLink]="['/home']" routerLinkActive="router-link-active"  id="r1"><span class="glyphicon glyphicon-shopping-cart"></span> Home</a><br><br>
     <a href=# id="r1"><span class="glyphicon glyphicon-expand" > </span> Aboutus </a><br><br>
@@ -52,7 +54,7 @@
     </div>
 </div>
 
-    <div class="col-lg-12">
+    <div class="col-lg-12" id="a1">
         <label>Run or Walk You will Use To It</label>
         <router-outlet></router-outlet>
 
@@ -65,5 +67,5 @@
 </body>
 </html>
 <footer>
-   <h4> Copyright © 2020 <b>Shoe Mart</b></h4>
+   <h4> <b>Copyright © 2020</b> <b>Shoe Mart</b></h4>
  </footer>

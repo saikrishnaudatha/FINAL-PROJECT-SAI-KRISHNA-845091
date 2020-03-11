@@ -71,11 +71,15 @@
                     <div *ngIf="f.password.errors.required">Password is required</div>
                 </div>
             </div>
+            <!-- Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+            seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;<br> -->
         <div class="text-center">
+            Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+            seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;<br>
             <button class="btn btn-primary mr-1 " ><b>Login</b></button><br>
             <button class="btn btn-secondary" type="reset" (click)="onReset()" >Reset</button><br>
-            Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
-seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp;
+            <!-- Buyer <input type="radio" formControlName="role" value="buyer" name="role">&nbsp;
+seller <input type="radio" formControlName="role" value="seller" name="role">&nbsp; -->
         </div>
       
     

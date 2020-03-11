@@ -1,0 +1,94 @@
+.sidenav a {
+	margin-top: 30px;
+	padding: 0px 0px 0px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: blanchedalmond;
+	display: inline-block;
+}
+.sidenav {
+	height: 90%;
+	width: 220px;
+	position: fixed;
+	z-index: 1;
+	top: 52px;
+	left: 0px;
+	background-color:lightskyblue ;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+@media screen and (max-width: 700px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("src\assets\images\shoeback1.jpg");
+  height: 750px;
+  /* width: 1035px;  */
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-attachment: fixed; 
+background-position: center;
+color: darkgoldenrod;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(226, 192, 192);
+}
+
+.topnav a {
+  
+  display: block;
+  color:brown;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#l
+{
+    float:right;
+}
+
+.navbar {
+    top:0px;
+    width:100%;
+    margin:0 auto;
+    background-color:rgba(255,255,255,0.5);
+    text-align: center;
+    border-radius:63px;
+    padding:0px;
+    }
+    .navbar ul li{
+    list-style:none;
+    display:inline-block;
+    }
+    .navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 30px 60px;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight:300;
+    color:#183899;
+    transition:background-color 0.5s ease;
+    
+    }

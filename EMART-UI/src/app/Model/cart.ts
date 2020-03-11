@@ -10,5 +10,6 @@ export class Cart {
         description:string;
         remarks:string;
         image:string;
+        buyerId:string;
     
 }
