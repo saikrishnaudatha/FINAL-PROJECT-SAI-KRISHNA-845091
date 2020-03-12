@@ -37,7 +37,7 @@
 * {box-sizing: border-box;}
 
 .img {
-  background-image: url("src\assets\images\shoe8.jpg");
+  background-image: url("src\assets\images\shoe.jpg");
   height: 1200px;
   width: 100%; 
   background-repeat: no-repeat;
