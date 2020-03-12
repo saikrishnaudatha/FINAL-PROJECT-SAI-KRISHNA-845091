@@ -36,19 +36,19 @@
   }
 * {box-sizing: border-box;}
 
-body {
+/* body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("src\assets\images\shoeback1.jpg");
   height: 750px;
   /* width: 1035px;  */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
    background-attachment: fixed; 
 background-position: center;
 color: darkgoldenrod;
-}
-
+} */
+/* 
 .topnav {
   overflow: hidden;
   background-color:rgb(226, 192, 192);
@@ -91,4 +91,16 @@ color: darkgoldenrod;
     color:#183899;
     transition:background-color 0.5s ease;
     
+    } */
+    th{
+      color: white;
+      font-size: 20px;
+    }
+    td{
+      color: #e7b81d;
+      font-size: 20px;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color:rgb(226, 192, 192);
     }

@@ -1,0 +1,19 @@
+.card {
+    width: 300px;
+    height: 220px;
+    float: left;
+    padding-left: 10px;
+}
+.view 
+{ 
+    
+    margin-left: 300px;
+   margin-top: 100px;
+ 
+}
+.card-body {
+    background-color: white;
+}
+img {
+    margin-left: 50px;
+}

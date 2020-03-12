@@ -5,3 +5,7 @@
 .row {
     margin-left: 150px;
 }
+input{
+    width: 270px;
+    height: 28px;
+}

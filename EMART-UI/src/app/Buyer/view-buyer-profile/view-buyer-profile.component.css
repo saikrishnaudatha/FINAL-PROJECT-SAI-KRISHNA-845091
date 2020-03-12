@@ -5,5 +5,27 @@ input {
     width: 250px;
 }
 button{
-    margin-left: 50px;
+    margin-left: 80px;
+    
 }
+label{
+    color: rgb(235, 221, 100);
+    font-size: 20px;
+    font-style: italic;
+}
+.jumbotron{
+    width: 350px;
+    height: 400px;
+    color: violet;
+}
+input[type=text], 
+input[type=password] { 
+  text-align: center;
+  width: 250px; 
+  height: 100%;
+  padding: 10px 20px; 
+  margin: 2px 0; 
+  display: grid; 
+  border: 2px solid #ccc; 
+  box-sizing: unset; 
+} 

@@ -48,7 +48,14 @@ body {
 background-position: center;
 color: darkgoldenrod;
 }
-
+th{
+  color: white;
+  font-size: 20px;
+}
+td{
+  color: #e7b81d;
+  font-size: 20px;
+}
 .topnav {
   overflow: hidden;
   background-color:rgb(226, 192, 192);

@@ -1,0 +1,12 @@
+.table{
+    width: 650px;
+    height: 350px;
+    color:rgb(214, 173, 120);
+
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 15px;
+}

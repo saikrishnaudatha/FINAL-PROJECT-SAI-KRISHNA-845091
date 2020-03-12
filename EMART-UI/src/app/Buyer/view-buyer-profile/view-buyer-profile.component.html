@@ -1,7 +1,42 @@
-<p>view-buyer-profile works!</p>
+<br><br>
+<div class="col-lg-11">
+  <br>
+  <br>
+  </div>
+  
+      <div class="col-lg-1">
+      <!-- <div class="jumbotron " id="b1"> -->
+    
+      <form [formGroup]="itemForm">
+        <div class="input-fields">
+          <label>ID</label>
+          <input type="text" formControlName="buyerId" placeholder="Enter ID" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.buyerId.errors  }" readonly/>
+            
+            <label>NAME</label>
+            <input type="text" formControlName="userName" placeholder="Enter Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.UserName.errors }" />
+            
+          <label>Password</label>
+          <input type="password" formControlName="password" placeholder="Enter Password" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.Password.errors }" />
+            
+          <label>EMAIL</label>
+            <input type="text" formControlName="emailId" placeholder="Enter Email" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" />
+           
+            <label>MOBILE</label>
+            <input type="text" formControlName="mobileNo" placeholder="Enter Mobile Number" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.mobileNo.errors }" />
+            
+          
+          </div>
+          <br><br>
+        <div class="text-center">
+         
+          <button class="ghost-round full-width" type="button" (click)="EditProfile()">EditProfile</button>
+     
+        </div>
+      </form>
+    </div>
+  <!-- </div> -->
 
-
-<div class='bold-line'></div>
+<!-- <div class='bold-line'></div>
       <div class='window'>
         <div class='overlay'></div>
         <div class='content'>
@@ -22,29 +57,14 @@
                
                 <label>MOBILE</label>
                 <input type="text" formControlName="mobileNo" placeholder="Enter Mobile Number" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.mobileNo.errors }" />
-                
-               <!-- <label>Company Name</label>
-                <input type="text" formControlName="companyName" placeholder="Enter Company Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }" />
-                
-               <label>Address</label>
-                <input type="text" formControlName="postalAddress" placeholder="Enter Address" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.postalAddress.errors }" />
-                
-               <label>GSTIN</label>
-                <input type="text" formControlName="gstin" placeholder="Enter GstIn" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.gstin.errors }" />
-                <label>BriefDetails</label>
-                <input type="text" formControlName="briefDetails" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.briefDetails.errors }" />
-                <label>WEBSITE</label>
-                <input type="text" formControlName="website" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.website.errors }" /> -->
-                <!-- <label>CreatedDateTime</label>
-                <input type="datetime" formControlName="createdDateTime" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.createdDateTime.errors }" /> -->
-                
-            </div>
-              <br><br>
+
+              </div>
+              <br><br> -->
            
               <!-- <button class="ghost-round full-width " id=b1>View</button> -->
-              <button class="ghost-round full-width" type="button" (click)="EditProfile()">EditProfile</button>
+              <!-- <button class="ghost-round full-width" type="button" (click)="EditProfile()">EditProfile</button> -->
               <!-- <button class="ghost-round full-width " type="reset" (click)="onReset()" id=b2>Reset</button> -->
            
-          </form>
+          <!-- </form>
         </div>
-      </div>
+      </div> -->

@@ -48,6 +48,19 @@ body {
 background-position: center;
 
 }
+label{
+  color:brown;
+  font-size: 20PX;
+}
+th{
+ color: rgba(98, 58, 5, 0.959);
+ font-size: 20px;
+ font-style: italic;
+}
+td{
+  color: white;
+  font-size: 15px;
+}
 
 .topnav {
   overflow: hidden;

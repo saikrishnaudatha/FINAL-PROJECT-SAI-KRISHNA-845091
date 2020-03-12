@@ -37,18 +37,19 @@
 * {box-sizing: border-box;}
 
 .img {
-  background-image: url("src\assets\images\shoeback1.jpg");
+  background-image: url("src\assets\images\shoe8.jpg");
   height: 1200px;
-  /* width: 1035px;  */
+  width: 100%; 
   background-repeat: no-repeat;
   background-size: cover;
-   background-attachment: fixed; 
+   background-attachment: fixed;
 background-position: center;
+
 }
 
 .topnav {
   overflow: hidden;
-  background-color:rgb(226, 192, 192);
+  background-color:rgba(190, 140, 117, 0.801);
 }
 
 .topnav a {
@@ -71,7 +72,7 @@ background-position: center;
 }
 
 .topnav a.active {
-  background-color:lightcyan;
+  background-color:rgb(255, 244, 224);
   color: black;
 }
 

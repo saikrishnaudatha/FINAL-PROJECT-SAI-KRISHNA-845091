@@ -27,6 +27,9 @@ body {
 background-position: center;
 /* position: fixed; */
 }
+button{
+  margin-right: 200px;
+}
 
 
 

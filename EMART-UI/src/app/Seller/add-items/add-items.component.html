@@ -14,16 +14,16 @@
     <div class="view">
     <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
       <div class="row">
-          <div class="col-6">
-        <div class="form-group ">
+          <!-- <div class="col-6"> -->
+        <!-- <div class="form-group ">
             <label>SellerId</label><br>
             <input type="text" formControlName="SellerId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.SellerId.errors }" />
             <div *ngIf="submitted && f.SellerId.errors" class="invalid-feedback">
                 <div *ngIf="f.SellerId.errors.required"> Id is required</div>
                 <div *ngIf="f.SellerId.errors.pattern">Enter only Alphabets</div>
-            </div>
-        </div>
-    </div>
+            </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
         <div class="col-6">
         <div class="form-group">
             <label>CategoryName</label>

@@ -18,3 +18,9 @@ input[type=password] {
   border: 1px solid rgb(119, 25, 25); 
   box-sizing: border-box; 
 } 
+label{
+  font-size: 20px;
+}
+button{
+  size: 40px;
+}

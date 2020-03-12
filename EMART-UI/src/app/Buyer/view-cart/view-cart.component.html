@@ -1,17 +1,10 @@
-
-<p>View Cart</p>
-<div class="container">
-    <div class="row">
-      <div class="col-md-3" *ngFor="let item of cart">
+  <!-- <div class="row"> -->
+      <div class="view">
+      <div  *ngFor="let item of cart"> 
           <div class="card">
             <h5 class="card-title">{{item.itemname}}</h5>
-             <img class="card-img " id="i1" src="assets/images/{{item.image}}" alt="Card image cap"> 
+             <img src="assets/images/{{item.image}}" alt="Card image cap" width="120px" height="100px"> 
               <div class="card-body" >
-                <!-- ItemId:{{item.itemId}}<br/>
-                CategoryId:{{item
-                    .categoryId}}<br/>
-                SubCategoryId:{{item.subcategoryId}}<br/>
-                 SellerId: {{item.sellerId}}<br/> -->
                  Price: {{item.price}}<br/>
                   Description:{{item.description}}<br/>
                     
@@ -23,7 +16,8 @@
             </div>
             </div>     
           </div>
-          <br>
+        
         </div>
       </div>
-    </div>
+      <!-- </div> -->
+   

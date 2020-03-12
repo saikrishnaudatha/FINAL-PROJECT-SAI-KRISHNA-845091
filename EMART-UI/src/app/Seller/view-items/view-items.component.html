@@ -6,16 +6,16 @@
         <thead>  
             <tr class="text-center text-uppercase">  
                 
-                <th>SellerId</th> 
+                <!-- <th>SellerId</th> 
                 <th>CategoryId</th> 
                 
-                <th>SubcategoryId</th>
+                <th>SubcategoryId</th> -->
                 <th>ItemID</th>  
                 <th>ItemName</th>  
                 <th>Description</th> 
                 <th>Price</th>   
                 <th>StockNumber</th>  
-                <th>Image</th>
+                <!-- <th>Image</th> -->
                   
                 <th>Remarks</th> 
                
@@ -23,9 +23,9 @@
         </thead>  
         <tbody>  
           <tr *ngFor="let item of itemlist"> 
-            <td>{{item.sellerId}}</td>  
+            <!-- <td>{{item.sellerId}}</td>  
             <td>{{item.categoryId}}</td> 
-            <td>{{item.subcategoryId}}</td> 
+            <td>{{item.subcategoryId}}</td>  -->
             <td>{{item.itemId}}</td>  
             <td>{{item.itemName}}</td> 
 
@@ -35,7 +35,7 @@
             <td>{{item.stockNumber}}</td> 
         
          
-            <td>{{item.image}}</td>
+            <!-- <td>{{item.image}}</td> -->
               
             <td>{{item.remarks}}</td>  
             <td> <button class='btn btn-danger' (click)="DeleteItem(item.itemId)">Delete</button> </td>
@@ -69,7 +69,7 @@
                 <form [formGroup]="itemForm">
                    <div class="form-group ">
                         <label>SubcategoryName</label><br>
-                        <input type="text" formControlName="SubcategoryId" class="form-control" readonly /> -->
+                        <input type="text" formControlName="SubcategoryId" class="form-control" readonly />
                     </div>
                     <div class="form-group ">
                         <label>CategoryName</label><br>
@@ -82,7 +82,7 @@
              <div class="form-group ">
                 <label>ItemId</label><br>
                 <input type="text" formControlName="ItemId" class="form-control" readonly /> 
-             </div>
+             </div> 
                 <div class="form-group ">
                     <label>ItemName</label><br>
                     <input type="text" formControlName="ItemName" class="form-control" required />

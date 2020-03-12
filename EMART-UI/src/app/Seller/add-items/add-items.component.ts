@@ -45,7 +45,7 @@ catid:string;
     this.itemForm=this.fromBuilder.group({
      
       ItemId:['',[Validators.required]],
-    SellerId:['',[Validators.required]],
+    //SellerId:['',[Validators.required]],
     
       //SellerName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,15}$')]],
       ItemName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,15}$')]],
@@ -138,7 +138,7 @@ get f()
 
       this.item=new Items();
       this.item.itemId='I'+Math.floor(Math.random()*1000);
-      this.item.sellerId=this.itemForm.value["SellerId"];
+      this.item.sellerId=localStorage.getItem("SellerId");
       this.item.image=this.image;
       this.item.itemName=this.itemForm.value["ItemName"];
       this.item.categoryId=(this.itemForm.value["CategoryName"]);

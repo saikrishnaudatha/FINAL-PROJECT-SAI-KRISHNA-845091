@@ -1,0 +1,19 @@
+input[type=text], 
+input[type=password] { 
+  text-align: center;
+  width: 500px; 
+  height: 40px;
+  padding: 1px 5px; 
+  margin: 2px 0; 
+  display: grid; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  
+} 
+label{
+    color: rgba(233, 150, 55, 0.918);
+    font-size: 20px;
+    align-items: flex-end;
+    font-style: italic;
+}
+

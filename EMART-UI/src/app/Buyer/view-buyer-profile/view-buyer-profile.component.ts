@@ -10,50 +10,68 @@ import { BuyerService } from 'src/app/Services/buyer.service';
 })
 export class ViewBuyerProfileComponent implements OnInit {
 
-  viewprofileForm:FormGroup;
+  itemForm:FormGroup;
   submitted=false;
-item:Buyer;
-itemlist:Buyer[];
 buyer:Buyer;
-  constructor(private formbuilder:FormBuilder,private service:BuyerService) { 
-    
-  let id1=localStorage.getItem('buyerId');
-  console.log(id1);
-  this.service.ViewProfile(id1).subscribe(res=>{
-    this.item=res;
-    //console.log(this.item);
-    this.viewprofileForm.patchValue({
-      buyerId:this.item.buyerId,
-      userName:this.item.userName,
-      password:this.item.password,
-      // companyName:this.item.companyName,
-      // gstin:this.item.gstin,
-      // briefDetails:this.item.briefDetails,
-      // postalAddress:this.item.postalAddress,
-      emailId:this.item.emailId,  
-      mobileNo:this.item.mobileNo,
-      // website:this.item.website
-    })
-  })
+ buyerlist:Buyer[];
+ 
+  constructor(private fromBuilder:FormBuilder,private service:BuyerService) {
+    let sid= localStorage.getItem('buyerId')
+    console.log(sid);
+ this.service.ViewProfile(sid).subscribe(res=>
+  {
+    this.buyer=res;
+    console.log("get");
+    console.log(this.buyer);
+    console.log('Id Found');
+    //console.log(res);
+    this.itemForm.patchValue(
+      {
+       
+      buyerId:localStorage.getItem('buyerId'),
+      userName:this.buyer.userName,
+        password:this.buyer.password,
+      emailId:this.buyer.emailId,
+       mobileNo:this.buyer.mobileNo,
+       
+        
+      }
+    )
+  },
+  err=>
+  {
+    console.log(err);
   }
+)
+
+   
+
+   }
 
   ngOnInit() {
-    this.viewprofileForm=this.formbuilder.group({
-       buyerId:['',Validators.required],
-       userName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,6}$')]], 
-      //  companyName:[''],
-      //  gstin:[''],
-      //  briefDetails:[''],
-      //  postalAddress:[''],
-       mobileNo:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
-       emailId:['',[Validators.required,Validators.email]],
-      //  website:[''],
-       password:['',[Validators.required,Validators.minLength(6)]],
-      //  createdDateTime:['']
-     
-
+   
+    this.itemForm=this.fromBuilder.group({
+       buyerId:[''],
+        userName:[''],
+      password:[''],
+    
+      emailId:[''],
+      mobileNo:[''],
+      CreatedDateTime:['']
+  
     });
   }
+
+
+
+
+
+
+
+
+
+
+
   onSubmit()
   {
     this.submitted=true;
@@ -61,34 +79,38 @@ buyer:Buyer;
 }
 get f()
 {
-  return this.viewprofileForm.controls;
+  return this.itemForm.controls;
 }
 onReset()
 {
 this.submitted=false;
-this.viewprofileForm.reset();
+this.itemForm.reset();
 }
+
+
+
+
+
+
 EditProfile()
 {
-  this.item=new Buyer();
-  console.log(this.item);
-  this.item.buyerId=this.viewprofileForm.value["buyerId"];
-  this.item.userName=this.viewprofileForm.value["userName"];
-  this.item.password=this.viewprofileForm.value["password"];
-  this.item.emailId=this.viewprofileForm.value["emailId"];
-  this.item.mobileNo=this.viewprofileForm.value["mobileno"];
-  // this.item.companyName=this.viewprofileForm.value["companyName"];
-  // this.item.gstin=this.viewprofileForm.value["gstin"];
-  // this.item.briefDetails=this.viewprofileForm.value["briefDetails"];
-  // this.item.postalAddress=this.viewprofileForm.value["postalAddress"];
-  // this.item.website=this.viewprofileForm.value["website"];
-// this.item.createdDateTime=this.viewprofileForm.value["createdDateTime"];
+  this.buyer=new Buyer();
+  console.log(this.buyer);
+  this.buyer.buyerId=localStorage.getItem('buyerId');
+  this.buyer.userName=this.itemForm.value["userName"];
+  this.buyer.password=this.itemForm.value["password"];
+  this.buyer.emailId=this.itemForm.value["emailId"];
+  this.buyer.mobileNo=this.itemForm.value["mobileNo"];
+
+this.buyer.createdDateTime=new Date();
+  
+// this.item.createdDateTime=this.itemForm.value["createdDateTime"];
 
   console.log(this.buyer);
   this.service.EditProfile(this.buyer).subscribe(res=>
     {
       console.log('Record Updated');
+      alert('updated succefully');
     })
 }
-
 }

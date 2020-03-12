@@ -35,14 +35,15 @@ ngOnInit() {
   onSubmit()
   {
     this.submitted=true;
-    this.Register();
+    
     //display from values on sucess
     if(this.registerForm.valid)
     {
+      this.Register();
       alert('sucess!!!!!!')
       console.log(JSON.stringify(this.registerForm.value));
     }
-    this.Register();
+    
   }
     onReset()
     {
