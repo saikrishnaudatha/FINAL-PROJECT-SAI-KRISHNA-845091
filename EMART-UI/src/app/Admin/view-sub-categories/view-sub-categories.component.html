@@ -23,7 +23,7 @@
                       <td>{{item.gst}}</td>
                       <td>{{item.briefDetails}}</td>
                       <td><button class="btn btn-primary btn-lg  mr-1" (click)="GetSubCatById(item.subcategoryId)" data-toggle="modal" data-target="#myModal">Edit</button></td>
-                      <td><button class="btn btn-danger  btn-lg  mr-1" (click)="Delete(item.categoryId)">Delete</button></td>
+                      <!-- <td><button class="btn btn-danger  btn-lg  mr-1" (click)="Delete(item.categoryId)">Delete</button></td> -->
                  </tr>
              </table>
          </div>
@@ -46,7 +46,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+              <h4 class="modal-title">Edit Here</h4>
             </div>
             <div class="modal-body">
               <form [formGroup]="viewsubcatForm">

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AdminComponent implements OnInit {
 
   constructor(private route:Router) {
-    if(!(localStorage.getItem('token'))){
+    if(!(localStorage.getItem('Admin'))){
       this.route.navigateByUrl('/home');
     }
    }

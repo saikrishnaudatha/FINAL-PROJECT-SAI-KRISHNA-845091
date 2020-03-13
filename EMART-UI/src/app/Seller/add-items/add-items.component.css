@@ -132,7 +132,7 @@ background-position: center;
   /* background: transparent(0.5); */
   width: 500px;
   position:absolute; 
-  margin-top:290px;
+  margin-top:305px;
   margin-left: 500px;
  transform:translate(-50%,-50%);
  /* width:250px; */
@@ -140,11 +140,11 @@ background-position: center;
  padding:80px 90px;
  box-sizing:border-box;
  border-radius: 30px;
- background:rgba(0,0,0,0.5);
+ background:rgba(102, 95, 95, 0.5);
 /* position: fixed; */
 }
 label{
-  color:rgb(231, 116, 8);
+  color:rgb(26, 23, 21);
   font-size: 14PX;
 }
    

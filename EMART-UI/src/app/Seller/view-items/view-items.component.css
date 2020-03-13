@@ -53,7 +53,7 @@ label{
   font-size: 20PX;
 }
 th{
- color: rgba(98, 58, 5, 0.959);
+ color: rgba(107, 186, 206, 0.959);
  font-size: 20px;
  font-style: italic;
 }
@@ -64,13 +64,13 @@ td{
 
 .topnav {
   overflow: hidden;
-  background-color:rgb(226, 192, 192);
+  background-color:rgb(240, 78, 78);
 }
 
 .topnav a {
   
   display: block;
-  color:brown;
+  color:rgb(219, 141, 141);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -130,6 +130,6 @@ td{
     padding: 14px;
   }
   .topnav input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid rgb(156, 39, 39);  
   }
 }

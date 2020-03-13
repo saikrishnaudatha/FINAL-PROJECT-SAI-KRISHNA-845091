@@ -11,7 +11,7 @@ input[type=password] {
   
 } 
 label{
-    color: rgba(233, 150, 55, 0.918);
+    color: rgba(51, 48, 44, 0.918);
     font-size: 20px;
     align-items: flex-end;
     font-style: italic;

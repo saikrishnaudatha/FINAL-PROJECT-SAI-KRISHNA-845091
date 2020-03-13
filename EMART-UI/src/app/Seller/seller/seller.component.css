@@ -49,13 +49,13 @@ background-position: center;
 
 .topnav {
   overflow: hidden;
-  background-color:rgba(190, 140, 117, 0.801);
+  background-color:rgba(119, 131, 151, 0.801);
 }
 
 .topnav a {
   
   display: block;
-  color:brown;
+  color:rgb(167, 46, 46);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -72,7 +72,7 @@ background-position: center;
 }
 
 .topnav a.active {
-  background-color:rgb(255, 244, 224);
+  background-color:rgb(180, 167, 151);
   color: black;
 }
 

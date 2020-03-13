@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class BuyerComponent implements OnInit {
 
   constructor(private route:Router) {
-    if(!(localStorage.getItem('token'))){
+    if(!(localStorage.getItem('buyerId'))){
       this.route.navigateByUrl('/home');
     }
    }
@@ -20,10 +20,7 @@ export class BuyerComponent implements OnInit {
 
   Logout()
   {
-    localStorage.clear();
     localStorage.removeItem('buyerid');
-    localStorage.removeItem('token');
-    localStorage.removeItem('sellerid');
     this.route.navigateByUrl('/home');
   }
 }
