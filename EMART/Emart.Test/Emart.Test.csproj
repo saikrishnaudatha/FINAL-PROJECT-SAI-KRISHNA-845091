@@ -21,6 +21,7 @@
     <ProjectReference Include="..\Emart.AccountService\Emart.AccountService.csproj" />
     <ProjectReference Include="..\Emart.AdminService\Emart.AdminService.csproj" />
     <ProjectReference Include="..\Emart.BuyerService\Emart.BuyerService.csproj" />
+    <ProjectReference Include="..\Emart.SellerService\Emart.SellerService.csproj" />
   </ItemGroup>
 
 </Project>

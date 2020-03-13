@@ -7,7 +7,6 @@ E:\FINALPROJECT\EMART\Emart.SellerService\bin\Debug\netcoreapp3.1\Emart.SellerSe
 E:\FINALPROJECT\EMART\Emart.SellerService\bin\Debug\netcoreapp3.1\Emart.SellerService.runtimeconfig.dev.json
 E:\FINALPROJECT\EMART\Emart.SellerService\bin\Debug\netcoreapp3.1\Emart.SellerService.dll
 E:\FINALPROJECT\EMART\Emart.SellerService\bin\Debug\netcoreapp3.1\Emart.SellerService.pdb
-E:\FINALPROJECT\EMART\Emart.SellerService\obj\Debug\netcoreapp3.1\Emart.SellerService.csprojAssemblyReference.cache
 E:\FINALPROJECT\EMART\Emart.SellerService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.SellerService.StaticWebAssets.Manifest.cache
 E:\FINALPROJECT\EMART\Emart.SellerService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.SellerService.StaticWebAssets.xml
 E:\FINALPROJECT\EMART\Emart.SellerService\obj\Debug\netcoreapp3.1\Emart.SellerService.AssemblyInfoInputs.cache

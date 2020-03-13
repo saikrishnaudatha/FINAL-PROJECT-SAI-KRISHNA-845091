@@ -7,7 +7,6 @@ E:\FINALPROJECT\EMART\Emart.AdminService\bin\Debug\netcoreapp3.1\Emart.AdminServ
 E:\FINALPROJECT\EMART\Emart.AdminService\bin\Debug\netcoreapp3.1\Emart.AdminService.runtimeconfig.dev.json
 E:\FINALPROJECT\EMART\Emart.AdminService\bin\Debug\netcoreapp3.1\Emart.AdminService.dll
 E:\FINALPROJECT\EMART\Emart.AdminService\bin\Debug\netcoreapp3.1\Emart.AdminService.pdb
-E:\FINALPROJECT\EMART\Emart.AdminService\obj\Debug\netcoreapp3.1\Emart.AdminService.csprojAssemblyReference.cache
 E:\FINALPROJECT\EMART\Emart.AdminService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.AdminService.StaticWebAssets.Manifest.cache
 E:\FINALPROJECT\EMART\Emart.AdminService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.AdminService.StaticWebAssets.xml
 E:\FINALPROJECT\EMART\Emart.AdminService\obj\Debug\netcoreapp3.1\Emart.AdminService.AssemblyInfoInputs.cache

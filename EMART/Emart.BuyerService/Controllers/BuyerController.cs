@@ -36,7 +36,7 @@ namespace Emart.BuyerService.Controllers
 
         [HttpPost]
         [Route("BuyItem")]
-        public IActionResult BuyItem(TransactionHistory item)
+        public IActionResult BuyItem(Transactionhistory item)
         {
             try
             {
@@ -162,14 +162,28 @@ namespace Emart.BuyerService.Controllers
             }
         }
 
+        //[HttpGet]
+        //[Route("ViewCart")]
+        //public IActionResult ViewCart()
+        //{
+        //    try
+        //    {
+
+        //        return Ok(_ibuyrepo.ViewCart());
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return NotFound(ex.InnerException.Message);
+        //    }
+        //}
         [HttpGet]
-        [Route("ViewCart")]
-        public IActionResult ViewCart()
+        [Route("ViewCart/{bid}")]
+        public IActionResult ViewCart(string bid)
         {
             try
             {
 
-                return Ok(_ibuyrepo.ViewCart());
+                return Ok(_ibuyrepo.ViewCart(bid));
             }
             catch (Exception ex)
             {
@@ -177,6 +191,20 @@ namespace Emart.BuyerService.Controllers
             }
         }
 
+        //[HttpGet]
+        //[Route("TransactionHistory/{bid}")]
+        //public IActionResult TransactionHistory(string bid)
+        //{
+        //    try
+        //    {
+
+        //        return Ok(_ibuyrepo.TransactionHistory(bid));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return NotFound(ex.InnerException.Message);
+        //    }
+        //}
 
     }
 }

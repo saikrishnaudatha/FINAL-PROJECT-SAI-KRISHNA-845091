@@ -7,7 +7,8 @@ namespace Emart.SellerService.Models
     {
         public Buyer()
         {
-            TransactionHistory = new HashSet<TransactionHistory>();
+            Cart = new HashSet<Cart>();
+            Transactionhistory = new HashSet<Transactionhistory>();
         }
 
         public string BuyerId { get; set; }
@@ -17,6 +18,7 @@ namespace Emart.SellerService.Models
         public string MobileNo { get; set; }
         public DateTime CreatedDateTime { get; set; }
 
-        public virtual ICollection<TransactionHistory> TransactionHistory { get; set; }
+        public virtual ICollection<Cart> Cart { get; set; }
+        public virtual ICollection<Transactionhistory> Transactionhistory { get; set; }
     }
 }

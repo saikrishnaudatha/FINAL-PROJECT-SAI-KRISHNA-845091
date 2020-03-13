@@ -7,7 +7,6 @@ E:\FINALPROJECT\EMART\Emart.BuyerService\bin\Debug\netcoreapp3.1\Emart.BuyerServ
 E:\FINALPROJECT\EMART\Emart.BuyerService\bin\Debug\netcoreapp3.1\Emart.BuyerService.runtimeconfig.dev.json
 E:\FINALPROJECT\EMART\Emart.BuyerService\bin\Debug\netcoreapp3.1\Emart.BuyerService.dll
 E:\FINALPROJECT\EMART\Emart.BuyerService\bin\Debug\netcoreapp3.1\Emart.BuyerService.pdb
-E:\FINALPROJECT\EMART\Emart.BuyerService\obj\Debug\netcoreapp3.1\Emart.BuyerService.csprojAssemblyReference.cache
 E:\FINALPROJECT\EMART\Emart.BuyerService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.BuyerService.StaticWebAssets.Manifest.cache
 E:\FINALPROJECT\EMART\Emart.BuyerService\obj\Debug\netcoreapp3.1\staticwebassets\Emart.BuyerService.StaticWebAssets.xml
 E:\FINALPROJECT\EMART\Emart.BuyerService\obj\Debug\netcoreapp3.1\Emart.BuyerService.AssemblyInfoInputs.cache

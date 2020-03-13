@@ -83,7 +83,7 @@ namespace Emart.AccountService.Controllers
                 {
                     token = new Token()
                     {
-                        BuyerId= buyer.BuyerId,
+                        buyerId= buyer.BuyerId,
                         token = GenerateJwtToken(uname),
                         msg = "success"
                     };
@@ -117,7 +117,7 @@ namespace Emart.AccountService.Controllers
                 {
                     token = new Token()
                     {
-                        SellerId = seller.SellerId,
+                        sellerId = seller.SellerId,
                         token = GenerateJwtToken(uname),
                         msg = "success"
                     };

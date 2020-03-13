@@ -14,12 +14,12 @@ namespace Emart.BuyerService.BRepository
             {
                 _context = context;
             }
-            public void BuyItem(TransactionHistory item)
-            {
+        public void BuyItem(Transactionhistory item)
+        {
 
-                _context.TransactionHistory.Add(item);
-                _context.SaveChanges();
-            }
+            _context.Transactionhistory.Add(item);
+            _context.SaveChanges();
+        }
 
         public void Addtocart(Cart cartobj)
         {
@@ -34,10 +34,10 @@ namespace Emart.BuyerService.BRepository
             _context.SaveChanges();
         }
 
-        public List<Cart> ViewCart()
-        {
-            return _context.Cart.ToList();
-        }
+        //public List<Cart> ViewCart()
+        //{
+        //    return _context.Cart.ToList();
+        //}
     
     public void EditProfile(Buyer obj)
             {
@@ -66,12 +66,21 @@ namespace Emart.BuyerService.BRepository
                 return _context.SubCategory.Where(res => res.CategoryId == catid).ToList();
             }
 
-            public List<TransactionHistory> TransactionHistory(string bid)
+            public List<Transactionhistory> TransactionHistory(string bid)
             {
-                return _context.TransactionHistory.Where(res => res.BuyerId == bid).ToList();
+                return _context.Transactionhistory.Where(res => res.BuyerId == bid).ToList();
 
             }
+        public List<Cart> ViewCart(string bid)
+        {
+            return _context.Cart.Where(res => res.BuyerId == bid).ToList();
         }
+
+        //public List<Transactionhistory> PurchaseHistory(string bid)
+        //{
+        //    return _context.Transactionhistory.Where(res => res.BuyerId == bid).ToList();
+        //}
+    }
     }
 
     

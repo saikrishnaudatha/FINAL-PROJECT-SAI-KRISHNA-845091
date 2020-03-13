@@ -8,7 +8,7 @@ namespace Emart.SellerService.Models
         public Items()
         {
             Cart = new HashSet<Cart>();
-            TransactionHistory = new HashSet<TransactionHistory>();
+            Transactionhistory = new HashSet<Transactionhistory>();
         }
 
         public string SellerId { get; set; }
@@ -26,6 +26,6 @@ namespace Emart.SellerService.Models
         public virtual Seller Seller { get; set; }
         public virtual SubCategory Subcategory { get; set; }
         public virtual ICollection<Cart> Cart { get; set; }
-        public virtual ICollection<TransactionHistory> TransactionHistory { get; set; }
+        public virtual ICollection<Transactionhistory> Transactionhistory { get; set; }
     }
 }
