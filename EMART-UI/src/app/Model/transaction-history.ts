@@ -1,5 +1,8 @@
 export class TransactionHistory {
     id:string;
+    itemName:string;
+    image:string;
+    price:string;
     buyerid:string;
     sellerid:string;
     Transactionid:string;
